@@ -16,6 +16,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    UIScrollView *scrollView = [[UIScrollView alloc] init];
+    scrollView.backgroundColor = [UIColor orangeColor];
+    [self.view addSubview:scrollView];
+    scrollView.frame = CGRectMake(50, 50, 200, 200);
     
 }
 
