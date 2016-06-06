@@ -20,7 +20,8 @@
     scrollView.backgroundColor = [UIColor orangeColor];
     [self.view addSubview:scrollView];
     scrollView.frame = CGRectMake(50, 50, 200, 200);
-    
+    // 增加购物车功能
+    // 完善图片轮播器功能
 }
 
 - (void)didReceiveMemoryWarning {
