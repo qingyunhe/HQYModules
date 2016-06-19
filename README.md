@@ -5,6 +5,8 @@ JSON数据展示
 图片无限轮播技术
 
 使用MVC设计模式
+完善项目框架
+
 # 使用框架
 AFNetWorking
 
