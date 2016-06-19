@@ -12,8 +12,10 @@ JSON数据展示
 # 使用框架
 AFNetWorking
 
-个人:www.heqingyun.com
+
 😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄华丽的笑脸分割线😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄
+如果你也热爱iOS开发,如果发现WanHeGardenShop项目有任何问题请直接联系 
 
+personal website <http://www.heqingyun.com>
 
-如果你也热爱iOS开发,如果发现WanHeGardenShop项目有任何问题请直接联系 <developerqingyun@gmail.com>
+personal email      <developerqingyun@gmail.com>
