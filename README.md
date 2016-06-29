@@ -8,7 +8,7 @@ JSON数据展示
 增加SDWebImage框架
 # 使用框架
 AFNetWorking
-MJRefresh
+
 
 😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄华丽的笑脸分割线😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄😄
 如果你也热爱iOS开发,如果发现WanHeGardenShop项目有任何问题请直接联系 
