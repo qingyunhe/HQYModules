@@ -11,6 +11,8 @@
 @interface HQYViewController ()
 /** 自定义选项卡 */
 @property (nonatomic,weak) UIView *tabBarView;
+/** 选项卡是否初始化 */
+@property (nonatomic,assign,getter=isInitialled) BOOL isInitialled;
 
 @end
 
@@ -30,17 +32,20 @@
     self.tabBarView.backgroundColor = [UIColor whiteColor];
 
     [self.view addSubview:self.tabBarView];
-    
-    
+
 }
 
 #pragma - mark 添加选项卡中的item
 - (void)viewWillAppear:(BOOL)animated{
     
-    [self setUpTabBar];
-
+    if(self.isInitialled == NO){
+    
+        [self setUpTabBar];
+    }
+    self.isInitialled = YES;
 }
 
+#pragma - mark 初始化选项卡
 - (void)setUpTabBar{
 
     CGFloat count = self.childViewControllers.count;
