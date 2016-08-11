@@ -25,13 +25,13 @@
     self.window.rootViewController = vc;
     
     UIViewController *vc1 = [[UIViewController alloc] init];
-//    vc1.view.backgroundColor = [UIColor redColor];
+    vc1.view.backgroundColor = [UIColor redColor];
     vc1.title = @"第一个";
     [vc addChildViewController:vc1];
     
     UIViewController *vc2 = [[UIViewController alloc] init];
     vc2.title = @"第二个";
-//    vc2.view.backgroundColor = [UIColor orangeColor];
+    vc2.view.backgroundColor = [UIColor greenColor];
     [vc addChildViewController:vc2];
     
     [self.window makeKeyAndVisible];
