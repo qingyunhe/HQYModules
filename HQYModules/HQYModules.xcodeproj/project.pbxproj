@@ -1,0 +1,543 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B9D8BA3E1D61686F003A0CB8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D8BA3D1D61686F003A0CB8 /* main.m */; };
+		B9D8BA411D61686F003A0CB8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D8BA401D61686F003A0CB8 /* AppDelegate.m */; };
+		B9D8BA491D61686F003A0CB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9D8BA481D61686F003A0CB8 /* Assets.xcassets */; };
+		B9D8BA4C1D61686F003A0CB8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9D8BA4A1D61686F003A0CB8 /* LaunchScreen.storyboard */; };
+		B9D8BA571D61686F003A0CB8 /* HQYModulesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D8BA561D61686F003A0CB8 /* HQYModulesTests.m */; };
+		B9D8BA621D61686F003A0CB8 /* HQYModulesUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D8BA611D61686F003A0CB8 /* HQYModulesUITests.m */; };
+		B9D8BA751D61695B003A0CB8 /* HQYTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D8BA721D61695B003A0CB8 /* HQYTableViewCell.m */; };
+		B9D8BA761D61695B003A0CB8 /* HQYTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D8BA741D61695B003A0CB8 /* HQYTableViewController.m */; };
+		B9D8BA791D6169AE003A0CB8 /* HQYReorderingController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D8BA781D6169AE003A0CB8 /* HQYReorderingController.m */; };
+		B9D8BA7C1D616A54003A0CB8 /* HQYReorderingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D8BA7B1D616A54003A0CB8 /* HQYReorderingCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B9D8BA531D61686F003A0CB8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B9D8BA311D61686F003A0CB8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B9D8BA381D61686F003A0CB8;
+			remoteInfo = HQYModules;
+		};
+		B9D8BA5E1D61686F003A0CB8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B9D8BA311D61686F003A0CB8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B9D8BA381D61686F003A0CB8;
+			remoteInfo = HQYModules;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B9D8BA391D61686F003A0CB8 /* HQYModules.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HQYModules.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9D8BA3D1D61686F003A0CB8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B9D8BA3F1D61686F003A0CB8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B9D8BA401D61686F003A0CB8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B9D8BA481D61686F003A0CB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B9D8BA4B1D61686F003A0CB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B9D8BA4D1D61686F003A0CB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9D8BA521D61686F003A0CB8 /* HQYModulesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HQYModulesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9D8BA561D61686F003A0CB8 /* HQYModulesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HQYModulesTests.m; sourceTree = "<group>"; };
+		B9D8BA581D61686F003A0CB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9D8BA5D1D61686F003A0CB8 /* HQYModulesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HQYModulesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9D8BA611D61686F003A0CB8 /* HQYModulesUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HQYModulesUITests.m; sourceTree = "<group>"; };
+		B9D8BA631D61686F003A0CB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9D8BA711D61695B003A0CB8 /* HQYTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HQYTableViewCell.h; sourceTree = "<group>"; };
+		B9D8BA721D61695B003A0CB8 /* HQYTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HQYTableViewCell.m; sourceTree = "<group>"; };
+		B9D8BA731D61695B003A0CB8 /* HQYTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HQYTableViewController.h; sourceTree = "<group>"; };
+		B9D8BA741D61695B003A0CB8 /* HQYTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HQYTableViewController.m; sourceTree = "<group>"; };
+		B9D8BA771D6169AE003A0CB8 /* HQYReorderingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HQYReorderingController.h; sourceTree = "<group>"; };
+		B9D8BA781D6169AE003A0CB8 /* HQYReorderingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HQYReorderingController.m; sourceTree = "<group>"; };
+		B9D8BA7A1D616A54003A0CB8 /* HQYReorderingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HQYReorderingCell.h; sourceTree = "<group>"; };
+		B9D8BA7B1D616A54003A0CB8 /* HQYReorderingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HQYReorderingCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B9D8BA361D61686F003A0CB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9D8BA4F1D61686F003A0CB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9D8BA5A1D61686F003A0CB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B9D8BA301D61686F003A0CB8 = {
+			isa = PBXGroup;
+			children = (
+				B9D8BA3B1D61686F003A0CB8 /* HQYModules */,
+				B9D8BA551D61686F003A0CB8 /* HQYModulesTests */,
+				B9D8BA601D61686F003A0CB8 /* HQYModulesUITests */,
+				B9D8BA3A1D61686F003A0CB8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B9D8BA3A1D61686F003A0CB8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B9D8BA391D61686F003A0CB8 /* HQYModules.app */,
+				B9D8BA521D61686F003A0CB8 /* HQYModulesTests.xctest */,
+				B9D8BA5D1D61686F003A0CB8 /* HQYModulesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B9D8BA3B1D61686F003A0CB8 /* HQYModules */ = {
+			isa = PBXGroup;
+			children = (
+				B9D8BA3F1D61686F003A0CB8 /* AppDelegate.h */,
+				B9D8BA401D61686F003A0CB8 /* AppDelegate.m */,
+				B9D8BA701D616938003A0CB8 /* Main */,
+				B9D8BA6F1D61691B003A0CB8 /* HQYCollectionView Reordering */,
+				B9D8BA3C1D61686F003A0CB8 /* Supporting Files */,
+			);
+			path = HQYModules;
+			sourceTree = "<group>";
+		};
+		B9D8BA3C1D61686F003A0CB8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B9D8BA481D61686F003A0CB8 /* Assets.xcassets */,
+				B9D8BA4A1D61686F003A0CB8 /* LaunchScreen.storyboard */,
+				B9D8BA4D1D61686F003A0CB8 /* Info.plist */,
+				B9D8BA3D1D61686F003A0CB8 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B9D8BA551D61686F003A0CB8 /* HQYModulesTests */ = {
+			isa = PBXGroup;
+			children = (
+				B9D8BA561D61686F003A0CB8 /* HQYModulesTests.m */,
+				B9D8BA581D61686F003A0CB8 /* Info.plist */,
+			);
+			path = HQYModulesTests;
+			sourceTree = "<group>";
+		};
+		B9D8BA601D61686F003A0CB8 /* HQYModulesUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B9D8BA611D61686F003A0CB8 /* HQYModulesUITests.m */,
+				B9D8BA631D61686F003A0CB8 /* Info.plist */,
+			);
+			path = HQYModulesUITests;
+			sourceTree = "<group>";
+		};
+		B9D8BA6F1D61691B003A0CB8 /* HQYCollectionView Reordering */ = {
+			isa = PBXGroup;
+			children = (
+				B9D8BA771D6169AE003A0CB8 /* HQYReorderingController.h */,
+				B9D8BA781D6169AE003A0CB8 /* HQYReorderingController.m */,
+				B9D8BA7A1D616A54003A0CB8 /* HQYReorderingCell.h */,
+				B9D8BA7B1D616A54003A0CB8 /* HQYReorderingCell.m */,
+			);
+			path = "HQYCollectionView Reordering";
+			sourceTree = "<group>";
+		};
+		B9D8BA701D616938003A0CB8 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				B9D8BA711D61695B003A0CB8 /* HQYTableViewCell.h */,
+				B9D8BA721D61695B003A0CB8 /* HQYTableViewCell.m */,
+				B9D8BA731D61695B003A0CB8 /* HQYTableViewController.h */,
+				B9D8BA741D61695B003A0CB8 /* HQYTableViewController.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B9D8BA381D61686F003A0CB8 /* HQYModules */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9D8BA661D61686F003A0CB8 /* Build configuration list for PBXNativeTarget "HQYModules" */;
+			buildPhases = (
+				B9D8BA351D61686F003A0CB8 /* Sources */,
+				B9D8BA361D61686F003A0CB8 /* Frameworks */,
+				B9D8BA371D61686F003A0CB8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HQYModules;
+			productName = HQYModules;
+			productReference = B9D8BA391D61686F003A0CB8 /* HQYModules.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B9D8BA511D61686F003A0CB8 /* HQYModulesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9D8BA691D61686F003A0CB8 /* Build configuration list for PBXNativeTarget "HQYModulesTests" */;
+			buildPhases = (
+				B9D8BA4E1D61686F003A0CB8 /* Sources */,
+				B9D8BA4F1D61686F003A0CB8 /* Frameworks */,
+				B9D8BA501D61686F003A0CB8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B9D8BA541D61686F003A0CB8 /* PBXTargetDependency */,
+			);
+			name = HQYModulesTests;
+			productName = HQYModulesTests;
+			productReference = B9D8BA521D61686F003A0CB8 /* HQYModulesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B9D8BA5C1D61686F003A0CB8 /* HQYModulesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9D8BA6C1D61686F003A0CB8 /* Build configuration list for PBXNativeTarget "HQYModulesUITests" */;
+			buildPhases = (
+				B9D8BA591D61686F003A0CB8 /* Sources */,
+				B9D8BA5A1D61686F003A0CB8 /* Frameworks */,
+				B9D8BA5B1D61686F003A0CB8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B9D8BA5F1D61686F003A0CB8 /* PBXTargetDependency */,
+			);
+			name = HQYModulesUITests;
+			productName = HQYModulesUITests;
+			productReference = B9D8BA5D1D61686F003A0CB8 /* HQYModulesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B9D8BA311D61686F003A0CB8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "江城程序猿";
+				TargetAttributes = {
+					B9D8BA381D61686F003A0CB8 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					B9D8BA511D61686F003A0CB8 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = B9D8BA381D61686F003A0CB8;
+					};
+					B9D8BA5C1D61686F003A0CB8 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = B9D8BA381D61686F003A0CB8;
+					};
+				};
+			};
+			buildConfigurationList = B9D8BA341D61686F003A0CB8 /* Build configuration list for PBXProject "HQYModules" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B9D8BA301D61686F003A0CB8;
+			productRefGroup = B9D8BA3A1D61686F003A0CB8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B9D8BA381D61686F003A0CB8 /* HQYModules */,
+				B9D8BA511D61686F003A0CB8 /* HQYModulesTests */,
+				B9D8BA5C1D61686F003A0CB8 /* HQYModulesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B9D8BA371D61686F003A0CB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9D8BA4C1D61686F003A0CB8 /* LaunchScreen.storyboard in Resources */,
+				B9D8BA491D61686F003A0CB8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9D8BA501D61686F003A0CB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9D8BA5B1D61686F003A0CB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B9D8BA351D61686F003A0CB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9D8BA761D61695B003A0CB8 /* HQYTableViewController.m in Sources */,
+				B9D8BA791D6169AE003A0CB8 /* HQYReorderingController.m in Sources */,
+				B9D8BA751D61695B003A0CB8 /* HQYTableViewCell.m in Sources */,
+				B9D8BA411D61686F003A0CB8 /* AppDelegate.m in Sources */,
+				B9D8BA3E1D61686F003A0CB8 /* main.m in Sources */,
+				B9D8BA7C1D616A54003A0CB8 /* HQYReorderingCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9D8BA4E1D61686F003A0CB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9D8BA571D61686F003A0CB8 /* HQYModulesTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9D8BA591D61686F003A0CB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9D8BA621D61686F003A0CB8 /* HQYModulesUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B9D8BA541D61686F003A0CB8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B9D8BA381D61686F003A0CB8 /* HQYModules */;
+			targetProxy = B9D8BA531D61686F003A0CB8 /* PBXContainerItemProxy */;
+		};
+		B9D8BA5F1D61686F003A0CB8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B9D8BA381D61686F003A0CB8 /* HQYModules */;
+			targetProxy = B9D8BA5E1D61686F003A0CB8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B9D8BA4A1D61686F003A0CB8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B9D8BA4B1D61686F003A0CB8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B9D8BA641D61686F003A0CB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B9D8BA651D61686F003A0CB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B9D8BA671D61686F003A0CB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HQYModules/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = www.heqingyun.com.HQYModules;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B9D8BA681D61686F003A0CB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HQYModules/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = www.heqingyun.com.HQYModules;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B9D8BA6A1D61686F003A0CB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HQYModulesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = www.heqingyun.com.HQYModulesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HQYModules.app/HQYModules";
+			};
+			name = Debug;
+		};
+		B9D8BA6B1D61686F003A0CB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HQYModulesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = www.heqingyun.com.HQYModulesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HQYModules.app/HQYModules";
+			};
+			name = Release;
+		};
+		B9D8BA6D1D61686F003A0CB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = HQYModulesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = www.heqingyun.com.HQYModulesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = HQYModules;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		B9D8BA6E1D61686F003A0CB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = HQYModulesUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = www.heqingyun.com.HQYModulesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = HQYModules;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B9D8BA341D61686F003A0CB8 /* Build configuration list for PBXProject "HQYModules" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9D8BA641D61686F003A0CB8 /* Debug */,
+				B9D8BA651D61686F003A0CB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9D8BA661D61686F003A0CB8 /* Build configuration list for PBXNativeTarget "HQYModules" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9D8BA671D61686F003A0CB8 /* Debug */,
+				B9D8BA681D61686F003A0CB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B9D8BA691D61686F003A0CB8 /* Build configuration list for PBXNativeTarget "HQYModulesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9D8BA6A1D61686F003A0CB8 /* Debug */,
+				B9D8BA6B1D61686F003A0CB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B9D8BA6C1D61686F003A0CB8 /* Build configuration list for PBXNativeTarget "HQYModulesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9D8BA6D1D61686F003A0CB8 /* Debug */,
+				B9D8BA6E1D61686F003A0CB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B9D8BA311D61686F003A0CB8 /* Project object */;
+}
