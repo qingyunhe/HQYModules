@@ -5,4 +5,4 @@ GitHub：[何青云](https://github.com/qingyunhe) ｜ Blog：[江城程序猿](
 
 ---           
 ###UICollection重排
-![Mou icon](/Users/jiangchengchengxuyuan/Desktop/GitHub/HQYModules/UICollectionView重排 .gif)
+![Mou icon](https://github.com/qingyunhe/HQYModules/blob/master/UICollectionView重排%20.gif)
