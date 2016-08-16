@@ -22,6 +22,7 @@ static NSString * const HQYID = @"cell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.title = @"江城程序猿";
     self.tableView.rowHeight = 66;
     
     // 设置背景视图
@@ -52,19 +53,19 @@ static NSString * const HQYID = @"cell";
     switch (indexPath.row) {
         case 0:
         {
-            text = @"江城程序猿 😄";
-            break;
-        }
-        case 1:
-        {
             // HQYCollectionView Reordering
             text = @"UICollectionView重排";
             break;
         }
-        case 2:
+        case 1:
         {
             // HQYCascadingMenu
             text = @"级联菜单";
+            break;
+        }
+        case 2:
+        {
+            text = @"待续 😄😄😄😄😄😄";
             break;
         }
         case 3:
@@ -117,7 +118,7 @@ static NSString * const HQYID = @"cell";
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
 
     switch (indexPath.row) {
-        case 1:
+        case 0:
         {
             HQYReorderingController *reorderingVc = [[HQYReorderingController alloc] init];
             reorderingVc.title = @"UICollectionView重排";
@@ -125,7 +126,7 @@ static NSString * const HQYID = @"cell";
             
             break;
         }
-        case 2:
+        case 1:
         {
             HQYCascadingMenuController *cascadingMenuVc = [[HQYCascadingMenuController alloc] init];
             cascadingMenuVc.title = @"级联菜单";
