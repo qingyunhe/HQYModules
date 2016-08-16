@@ -28,6 +28,7 @@ static NSString *HQYMainCategoryControllerID = @"cell";
 - (void)viewWillAppear:(BOOL)animated{
     
     [self.tableView selectRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0] animated:NO scrollPosition:(UITableViewScrollPositionTop)];
+    
     [self showSubCategoriesDataOfArrowZero];
 }
 
@@ -40,7 +41,6 @@ static NSString *HQYMainCategoryControllerID = @"cell";
         HYQHealthItem *item = [HYQHealthItem categoryWithDict:dict];
         [self.delegate categoryViewController:self didSelectSubCategories:item.subcategories];
     }
-
 }
 
 #pragma - mark plist文件中所有数据懒加载
