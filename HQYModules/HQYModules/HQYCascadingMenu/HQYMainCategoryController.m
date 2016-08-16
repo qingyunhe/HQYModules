@@ -10,7 +10,7 @@
 #import "HYQHealthItem.h"
 
 @interface HQYMainCategoryController ()
-/** 所有数据 */
+/** plist文件中所有数据 */
 @property (nonatomic, strong) NSArray *mainCategories;
 
 @end
@@ -19,6 +19,31 @@
 
 static NSString *HQYMainCategoryControllerID = @"cell";
 
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:HQYMainCategoryControllerID];
+}
+
+- (void)viewWillAppear:(BOOL)animated{
+    
+    [self.tableView selectRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0] animated:NO scrollPosition:(UITableViewScrollPositionTop)];
+    [self showSubCategoriesDataOfArrowZero];
+}
+
+#pragma - mark 显示第0行数据
+- (void)showSubCategoriesDataOfArrowZero{
+
+    if ([self.delegate respondsToSelector:@selector(categoryViewController:didSelectSubCategories:)]) {
+        
+        NSDictionary *dict = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"health.plist" ofType:nil]][0];
+        HYQHealthItem *item = [HYQHealthItem categoryWithDict:dict];
+        [self.delegate categoryViewController:self didSelectSubCategories:item.subcategories];
+    }
+
+}
+
+#pragma - mark plist文件中所有数据懒加载
 - (NSArray *)mainCategories
 {
     if (_mainCategories == nil) {
@@ -31,12 +56,6 @@ static NSString *HQYMainCategoryControllerID = @"cell";
         _mainCategories = categoryArray;
     }
     return _mainCategories;
-}
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    
-    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:HQYMainCategoryControllerID];
 }
 
 #pragma mark - UITableViewDataSource
