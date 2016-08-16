@@ -19,5 +19,7 @@ GitHub：[何青云](https://github.com/qingyunhe) ｜ Blog：[江城程序猿](
 
 ---    
 ###级联菜单
+![Mou icon](https://github.com/qingyunhe/HQYModules/blob/master/级联菜单.gif)
+---    
 
 待续 😄
