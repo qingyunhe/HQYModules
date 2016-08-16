@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B9CA97161D635D1F00FEB07A /* HQYMainCategoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CA97151D635D1F00FEB07A /* HQYMainCategoryController.m */; };
+		B9CA97191D635D3100FEB07A /* HQYSubCategoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CA97181D635D3100FEB07A /* HQYSubCategoryController.m */; };
+		B9CA971C1D635D4900FEB07A /* HYQHealthItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CA971B1D635D4900FEB07A /* HYQHealthItem.m */; };
+		B9CA971F1D635DF100FEB07A /* HQYCascadingMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CA971E1D635DF100FEB07A /* HQYCascadingMenuController.m */; };
+		B9CA97241D635E5B00FEB07A /* health.plist in Resources */ = {isa = PBXBuildFile; fileRef = B9CA97231D635E5B00FEB07A /* health.plist */; };
 		B9D8BA3E1D61686F003A0CB8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D8BA3D1D61686F003A0CB8 /* main.m */; };
 		B9D8BA411D61686F003A0CB8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B9D8BA401D61686F003A0CB8 /* AppDelegate.m */; };
 		B9D8BA491D61686F003A0CB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9D8BA481D61686F003A0CB8 /* Assets.xcassets */; };
@@ -37,6 +42,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B9CA97141D635D1F00FEB07A /* HQYMainCategoryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HQYMainCategoryController.h; sourceTree = "<group>"; };
+		B9CA97151D635D1F00FEB07A /* HQYMainCategoryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HQYMainCategoryController.m; sourceTree = "<group>"; };
+		B9CA97171D635D3100FEB07A /* HQYSubCategoryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HQYSubCategoryController.h; sourceTree = "<group>"; };
+		B9CA97181D635D3100FEB07A /* HQYSubCategoryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HQYSubCategoryController.m; sourceTree = "<group>"; };
+		B9CA971A1D635D4900FEB07A /* HYQHealthItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HYQHealthItem.h; sourceTree = "<group>"; };
+		B9CA971B1D635D4900FEB07A /* HYQHealthItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HYQHealthItem.m; sourceTree = "<group>"; };
+		B9CA971D1D635DF100FEB07A /* HQYCascadingMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HQYCascadingMenuController.h; sourceTree = "<group>"; };
+		B9CA971E1D635DF100FEB07A /* HQYCascadingMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HQYCascadingMenuController.m; sourceTree = "<group>"; };
+		B9CA97231D635E5B00FEB07A /* health.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = health.plist; sourceTree = "<group>"; };
 		B9D8BA391D61686F003A0CB8 /* HQYModules.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HQYModules.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B9D8BA3D1D61686F003A0CB8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B9D8BA3F1D61686F003A0CB8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -85,6 +99,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B9CA97131D635CFB00FEB07A /* HQYCascadingMenu */ = {
+			isa = PBXGroup;
+			children = (
+				B9CA971D1D635DF100FEB07A /* HQYCascadingMenuController.h */,
+				B9CA971E1D635DF100FEB07A /* HQYCascadingMenuController.m */,
+				B9CA97141D635D1F00FEB07A /* HQYMainCategoryController.h */,
+				B9CA97151D635D1F00FEB07A /* HQYMainCategoryController.m */,
+				B9CA97171D635D3100FEB07A /* HQYSubCategoryController.h */,
+				B9CA97181D635D3100FEB07A /* HQYSubCategoryController.m */,
+				B9CA971A1D635D4900FEB07A /* HYQHealthItem.h */,
+				B9CA971B1D635D4900FEB07A /* HYQHealthItem.m */,
+				B9CA97221D635E5B00FEB07A /* Resources */,
+			);
+			path = HQYCascadingMenu;
+			sourceTree = "<group>";
+		};
+		B9CA97221D635E5B00FEB07A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B9CA97231D635E5B00FEB07A /* health.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		B9D8BA301D61686F003A0CB8 = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +150,7 @@
 				B9D8BA401D61686F003A0CB8 /* AppDelegate.m */,
 				B9D8BA701D616938003A0CB8 /* Main */,
 				B9D8BA6F1D61691B003A0CB8 /* HQYCollectionView Reordering */,
+				B9CA97131D635CFB00FEB07A /* HQYCascadingMenu */,
 				B9D8BA3C1D61686F003A0CB8 /* Supporting Files */,
 			);
 			path = HQYModules;
@@ -272,6 +311,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B9D8BA4C1D61686F003A0CB8 /* LaunchScreen.storyboard in Resources */,
+				B9CA97241D635E5B00FEB07A /* health.plist in Resources */,
 				B9D8BA491D61686F003A0CB8 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,9 +337,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9CA971C1D635D4900FEB07A /* HYQHealthItem.m in Sources */,
 				B9D8BA761D61695B003A0CB8 /* HQYTableViewController.m in Sources */,
 				B9D8BA791D6169AE003A0CB8 /* HQYReorderingController.m in Sources */,
+				B9CA971F1D635DF100FEB07A /* HQYCascadingMenuController.m in Sources */,
 				B9D8BA751D61695B003A0CB8 /* HQYTableViewCell.m in Sources */,
+				B9CA97191D635D3100FEB07A /* HQYSubCategoryController.m in Sources */,
+				B9CA97161D635D1F00FEB07A /* HQYMainCategoryController.m in Sources */,
 				B9D8BA411D61686F003A0CB8 /* AppDelegate.m in Sources */,
 				B9D8BA3E1D61686F003A0CB8 /* main.m in Sources */,
 				B9D8BA7C1D616A54003A0CB8 /* HQYReorderingCell.m in Sources */,
@@ -520,6 +564,7 @@
 				B9D8BA681D61686F003A0CB8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B9D8BA691D61686F003A0CB8 /* Build configuration list for PBXNativeTarget "HQYModulesTests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +573,7 @@
 				B9D8BA6B1D61686F003A0CB8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B9D8BA6C1D61686F003A0CB8 /* Build configuration list for PBXNativeTarget "HQYModulesUITests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +582,7 @@
 				B9D8BA6E1D61686F003A0CB8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

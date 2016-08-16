@@ -9,6 +9,7 @@
 #import "HQYTableViewController.h"
 #import "HQYTableViewCell.h"
 #import "HQYReorderingController.h"
+#import "HQYCascadingMenuController.h"
 
 @interface HQYTableViewController ()
 
@@ -44,7 +45,6 @@ static NSString * const HQYID = @"cell";
     
     HQYTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:HQYID];
     if (cell == nil) {
-        
         cell = [[HQYTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:HQYID];
     }
 
@@ -57,12 +57,14 @@ static NSString * const HQYID = @"cell";
         }
         case 1:
         {
+            // HQYCollectionView Reordering
             text = @"UICollectionView重排";
             break;
         }
         case 2:
         {
-            text = @"待续 😄😄😄😄😄😄";
+            // HQYCascadingMenu
+            text = @"级联菜单";
             break;
         }
         case 3:
@@ -121,6 +123,13 @@ static NSString * const HQYID = @"cell";
             reorderingVc.title = @"UICollectionView重排";
             [self.navigationController pushViewController:reorderingVc animated:YES];
             
+            break;
+        }
+        case 2:
+        {
+            HQYCascadingMenuController *cascadingMenuVc = [[HQYCascadingMenuController alloc] init];
+            cascadingMenuVc.title = @"级联菜单";
+            [self.navigationController pushViewController:cascadingMenuVc animated:YES];
             break;
         }
         default:

@@ -23,7 +23,7 @@
 
 @end
 
-static NSString * const HQYID = @"cell";
+static NSString * const HQYReorderingControllerID = @"cell";
 
 @implementation HQYReorderingController
 
@@ -80,7 +80,7 @@ static NSString * const HQYID = @"cell";
     _reorderingCollectionView.backgroundColor = [UIColor lightGrayColor];
     _reorderingCollectionView.dataSource = self;
     _reorderingCollectionView.delegate = self;
-    [_reorderingCollectionView registerClass:[HQYReorderingCell class] forCellWithReuseIdentifier:HQYID];
+    [_reorderingCollectionView registerClass:[HQYReorderingCell class] forCellWithReuseIdentifier:HQYReorderingControllerID];
     [self.view addSubview:_reorderingCollectionView];
 }
 
@@ -97,7 +97,7 @@ static NSString * const HQYID = @"cell";
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     
-    HQYReorderingCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:HQYID forIndexPath:indexPath];
+    HQYReorderingCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:HQYReorderingControllerID forIndexPath:indexPath];
     cell.backgroundColor = [UIColor whiteColor];
     cell.cellImageView.image = [UIImage imageNamed:self.imagesArrayM[indexPath.row]];
     UILongPressGestureRecognizer *longPress = [[UILongPressGestureRecognizer alloc]initWithTarget:self action:@selector(longPressGesture:)];
