@@ -23,14 +23,14 @@ GitHub：[何青云](https://github.com/qingyunhe) ｜ Blog：[江城程序猿](
 
 ####实现思路:
 
-1 分别使用两个继承于UITableViewController的控制器管理左右两侧菜单,分别命名为HQYMainCategoryController(左菜单控制器)和HQYSubCategoryController(右菜单控制器).
+1 分别使用两个继承于`UITableViewController`的控制器管理左右两侧菜单,分别命名为`HQYMainCategoryController`(左菜单控制器)和`HQYSubCategoryController`(右菜单控制器).
 
-2 使用导航控制器push出来的控制器(命名为HQYCascadingMenuController)来管理HQYMainCategoryController和HQYSubCategoryController,将HQYMainCategoryController和HQYSubCategoryController添加为HQYCascadingMenuController的子控制器,并将子控制器的view作为子控件添加到HQYCascadingMenuController的view中.
+2 使用导航控制器`push`出来的控制器(命名为`HQYCascadingMenuController`)来管理`HQYMainCategoryController`和`HQYSubCategoryController`,将`HQYMainCategoryController`和`HQYSubCategoryController`添加为`HQYCascadingMenuController`的子控制器,并将子控制器的`view`作为子控件添加到`HQYCascadingMenuController`的`view`中.
 
-3 使用代理传值,将HQYMainCategoryController中的数据传递给HQYSubCategoryController.
+3 使用代理传值,将`HQYMainCategoryController`中的数据传递给`HQYSubCategoryController`.
 
 ####注意事项:
-1 默认HQYMainCategoryController的view第0行cell应该处于选中状态,该业务逻辑应该在viewWillAppear方法中实现,而非在viewDidLoad方法中实现.
+1 默认`HQYMainCategoryController`的`view`第0行`cell`应该处于选中状态,该业务逻辑应该在`viewWillAppear`方法中实现,而非在`viewDidLoad`方法中实现.
 
 ```objc
 - (void)viewWillAppear:(BOOL)animated{
@@ -42,7 +42,7 @@ GitHub：[何青云](https://github.com/qingyunhe) ｜ Blog：[江城程序猿](
 
 ```
 
-2 默认HQYSubCategoryController的view展示HQYMainCategoryController的view第0行cell对应的数据.
+2 默认`HQYSubCategoryController`的`view`展示`HQYMainCategoryController`的`view`第0行`cell`对应的数据.
 
 ```objc
 - (void)showSubCategoriesDataOfArrowZero{
@@ -61,7 +61,7 @@ GitHub：[何青云](https://github.com/qingyunhe) ｜ Blog：[江城程序猿](
 ![Mou icon](https://github.com/qingyunhe/HQYModules/blob/master/statusBar.gif)
 
 ####实现过程:
- 1 拿到UIStatusBarForegroundView对象
+ 1 拿到`UIStatusBarForegroundView`对象
  
  ```objc
  
@@ -70,8 +70,7 @@ GitHub：[何青云](https://github.com/qingyunhe) ｜ Blog：[江城程序猿](
     statusBar.frame = (CGRect){0, 100, 350, 50};
     statusBar.center = self.view.center;
     statusBar.backgroundColor = [UIColor orangeColor];
-        
-UIView *barForegroundView =  statusBar.subviews[1];
+    UIView *barForegroundView =  statusBar.subviews[1];
 
  ```
  2 对系统状态栏的私有属性进行个性化设置(以网络服务商为例) ```objc
@@ -87,6 +86,7 @@ UIView *barForegroundView =  statusBar.subviews[1];
     seviceLabel.font = [UIFont systemFontOfSize:10];
     [barForegroundView addSubview:seviceLabel];
     
- ``  
+ ```
+---    
 
 待续 😄
