@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B913CE4A1D66E55A00CEDE0C /* HQYStatusBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B913CE491D66E55A00CEDE0C /* HQYStatusBarController.m */; };
 		B9CA97161D635D1F00FEB07A /* HQYMainCategoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CA97151D635D1F00FEB07A /* HQYMainCategoryController.m */; };
 		B9CA97191D635D3100FEB07A /* HQYSubCategoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CA97181D635D3100FEB07A /* HQYSubCategoryController.m */; };
 		B9CA971C1D635D4900FEB07A /* HYQHealthItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CA971B1D635D4900FEB07A /* HYQHealthItem.m */; };
@@ -42,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B913CE481D66E55A00CEDE0C /* HQYStatusBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HQYStatusBarController.h; sourceTree = "<group>"; };
+		B913CE491D66E55A00CEDE0C /* HQYStatusBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HQYStatusBarController.m; sourceTree = "<group>"; };
 		B9CA97141D635D1F00FEB07A /* HQYMainCategoryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HQYMainCategoryController.h; sourceTree = "<group>"; };
 		B9CA97151D635D1F00FEB07A /* HQYMainCategoryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HQYMainCategoryController.m; sourceTree = "<group>"; };
 		B9CA97171D635D3100FEB07A /* HQYSubCategoryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HQYSubCategoryController.h; sourceTree = "<group>"; };
@@ -99,6 +102,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B913CE471D66E53500CEDE0C /* HQYStatusBar */ = {
+			isa = PBXGroup;
+			children = (
+				B913CE481D66E55A00CEDE0C /* HQYStatusBarController.h */,
+				B913CE491D66E55A00CEDE0C /* HQYStatusBarController.m */,
+			);
+			path = HQYStatusBar;
+			sourceTree = "<group>";
+		};
 		B9CA97131D635CFB00FEB07A /* HQYCascadingMenu */ = {
 			isa = PBXGroup;
 			children = (
@@ -151,6 +163,7 @@
 				B9D8BA701D616938003A0CB8 /* Main */,
 				B9D8BA6F1D61691B003A0CB8 /* HQYCollectionView Reordering */,
 				B9CA97131D635CFB00FEB07A /* HQYCascadingMenu */,
+				B913CE471D66E53500CEDE0C /* HQYStatusBar */,
 				B9D8BA3C1D61686F003A0CB8 /* Supporting Files */,
 			);
 			path = HQYModules;
@@ -345,6 +358,7 @@
 				B9CA97191D635D3100FEB07A /* HQYSubCategoryController.m in Sources */,
 				B9CA97161D635D1F00FEB07A /* HQYMainCategoryController.m in Sources */,
 				B9D8BA411D61686F003A0CB8 /* AppDelegate.m in Sources */,
+				B913CE4A1D66E55A00CEDE0C /* HQYStatusBarController.m in Sources */,
 				B9D8BA3E1D61686F003A0CB8 /* main.m in Sources */,
 				B9D8BA7C1D616A54003A0CB8 /* HQYReorderingCell.m in Sources */,
 			);

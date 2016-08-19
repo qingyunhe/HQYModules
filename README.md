@@ -21,7 +21,7 @@ GitHub：[何青云](https://github.com/qingyunhe) ｜ Blog：[江城程序猿](
 ###级联菜单
 ![Mou icon](https://github.com/qingyunhe/HQYModules/blob/master/级联菜单.gif)
 
-#####实现思路:
+####实现思路:
 
 1 分别使用两个继承于UITableViewController的控制器管理左右两侧菜单,分别命名为HQYMainCategoryController(左菜单控制器)和HQYSubCategoryController(右菜单控制器).
 
@@ -29,14 +29,14 @@ GitHub：[何青云](https://github.com/qingyunhe) ｜ Blog：[江城程序猿](
 
 3 使用代理传值,将HQYMainCategoryController中的数据传递给HQYSubCategoryController.
 
-#####注意事项:
+####注意事项:
 1 默认HQYMainCategoryController的view第0行cell应该处于选中状态,该业务逻辑应该在viewWillAppear方法中实现,而非在viewDidLoad方法中实现.
 
 ```objc
 - (void)viewWillAppear:(BOOL)animated{
     
     [self.tableView selectRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:0] animated:NO scrollPosition:(UITableViewScrollPositionTop)];
-    
+    // 显示第0行数据
     [self showSubCategoriesDataOfArrowZero];
 }
 
@@ -48,12 +48,13 @@ GitHub：[何青云](https://github.com/qingyunhe) ｜ Blog：[江城程序猿](
 - (void)showSubCategoriesDataOfArrowZero{
 
     if ([self.delegate respondsToSelector:@selector(categoryViewController:didSelectSubCategories:)]) {
-        
         NSDictionary *dict = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"health.plist" ofType:nil]][0];
         HYQHealthItem *item = [HYQHealthItem categoryWithDict:dict];
         [self.delegate categoryViewController:self didSelectSubCategories:item.subcategories];
     }
 }
+
+```
 
 ---    
 

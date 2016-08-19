@@ -10,6 +10,7 @@
 #import "HQYTableViewCell.h"
 #import "HQYReorderingController.h"
 #import "HQYCascadingMenuController.h"
+#import "HQYStatusBarController.h"
 
 @interface HQYTableViewController ()
 
@@ -48,6 +49,7 @@ static NSString * const HQYID = @"cell";
     if (cell == nil) {
         cell = [[HQYTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:HQYID];
     }
+    cell.textLabel.font = [UIFont systemFontOfSize:25];
 
     NSString *text = nil;
     switch (indexPath.row) {
@@ -65,7 +67,9 @@ static NSString * const HQYID = @"cell";
         }
         case 2:
         {
-            text = @"待续 😄😄😄😄😄😄";
+            // HQYStatusBar
+            text = @"自定义系统状态栏(服务商,网络信号,时间,电池)";
+            cell.textLabel.font = [UIFont systemFontOfSize:15];
             break;
         }
         case 3:
@@ -107,7 +111,6 @@ static NSString * const HQYID = @"cell";
         default:
             break;
     }
-    cell.textLabel.font = [UIFont systemFontOfSize:25];
     
     cell.textLabel.text = text;
     
@@ -131,6 +134,13 @@ static NSString * const HQYID = @"cell";
             HQYCascadingMenuController *cascadingMenuVc = [[HQYCascadingMenuController alloc] init];
             cascadingMenuVc.title = @"级联菜单";
             [self.navigationController pushViewController:cascadingMenuVc animated:YES];
+            break;
+        }
+        case 2:
+        {
+            HQYStatusBarController *statusBarVc = [[HQYStatusBarController alloc] init];
+            statusBarVc.title = @"自定义系统状态栏";
+            [self.navigationController pushViewController:statusBarVc animated:YES];
             break;
         }
         default:
