@@ -58,6 +58,7 @@ GitHub：[何青云](https://github.com/qingyunhe) ｜ Blog：[江城程序猿](
 ```
 ---    
 ###HQYStatusBar自定义状态栏
+![Mou icon](https://github.com/qingyunhe/HQYModules/blob/master/statusBar.gif)
 
 
 待续 😄
