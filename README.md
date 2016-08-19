@@ -7,6 +7,7 @@ GitHub：[何青云](https://github.com/qingyunhe) ｜ Blog：[江城程序猿](
 ##目录
 * [UICollection重排](#UICollection重排)
 * [级联菜单](#级联菜单)
+* [HQYStatusBar自定义状态栏](#HQYStatusBar自定义状态栏)
 
     
    备注:网页浏览时,gif图偶尔会有非代码原因的卡顿.
@@ -55,7 +56,8 @@ GitHub：[何青云](https://github.com/qingyunhe) ｜ Blog：[江城程序猿](
 }
 
 ```
-
 ---    
+###HQYStatusBar自定义状态栏
+
 
 待续 😄
