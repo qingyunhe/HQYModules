@@ -9,8 +9,7 @@ GitHub：[何青云](https://github.com/qingyunhe) ｜ Blog：[江城程序猿](
 * [级联菜单](#级联菜单)
 * [HQYStatusBar自定义状态栏](#HQYStatusBar自定义状态栏)
 
-    
-   备注:网页浏览时,gif图偶尔会有非代码原因的卡顿.
+  备注:网页浏览时,gif图偶尔会有非代码原因的卡顿.
 
 ---           
     
@@ -60,5 +59,33 @@ GitHub：[何青云](https://github.com/qingyunhe) ｜ Blog：[江城程序猿](
 ###HQYStatusBar自定义状态栏
 ![Mou icon](https://github.com/qingyunhe/HQYModules/blob/master/statusBar.gif)
 
+####实现过程:
+ 1 拿到UIStatusBarForegroundView对象
+ 
+ ```objc
+ 
+    UIApplication *app = [UIApplication sharedApplication];
+    UIView *statusBar = [app valueForKeyPath:@"statusBar"];
+    statusBar.frame = (CGRect){0, 100, 350, 50};
+    statusBar.center = self.view.center;
+    statusBar.backgroundColor = [UIColor orangeColor];
+    
+    UIView *barForegroundView =  statusBar.subviews[1];
+
+ ```
+ 2 对系统状态栏的私有属性进行个性化设置(以网络服务商为例) ```objc
+ 
+    UIView *seviceView =  barForegroundView.subviews[0];
+    CGRect seviceFrame = seviceView.frame;
+    seviceFrame.size.width = 2 *  seviceFrame.size.width;
+    seviceView.frame = seviceFrame;
+    seviceView.hidden = YES;
+    UILabel *seviceLabel = [[UILabel alloc] init];
+    seviceLabel.frame = seviceFrame;
+    seviceLabel.text = @"66666";
+    seviceLabel.font = [UIFont systemFontOfSize:10];
+    [barForegroundView addSubview:seviceLabel];
+    
+ ```
 
 待续 😄
