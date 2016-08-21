@@ -16,7 +16,6 @@
 @implementation AppDelegate
 
 #pragma - mark app加载完成
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
