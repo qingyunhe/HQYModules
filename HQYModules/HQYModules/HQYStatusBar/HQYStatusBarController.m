@@ -21,6 +21,7 @@
     [self setUpStatusBar];
 }
 
+#pragma - mark 设置状态栏
 - (void)setUpStatusBar{
     
     UIApplication *app = [UIApplication sharedApplication];
