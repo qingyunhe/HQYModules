@@ -9,7 +9,7 @@ GitHub：[何青云](https://github.com/qingyunhe) ｜ Blog：[江城程序猿](
 * [级联菜单](#级联菜单)
 * [HQYStatusBar自定义状态栏](#级联菜单)
 
-  备注:网页浏览时,gif图偶尔会有非代码原因的卡顿.
+  备注:浏览时,gif图偶尔会有非代码原因的卡顿.
 
 ---           
     
