@@ -74,6 +74,7 @@ static NSString * const HQYID = @"cell";
         }
         case 3:
         {
+            // HQYDownMenu
             text = @"自定义下拉菜单";
             break;
         }
