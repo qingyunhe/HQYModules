@@ -9,8 +9,7 @@
 #import "HQYReorderingController.h"
 #import "HQYReorderingCell.h"
 
-#define HQYScreenWidth   ([UIScreen mainScreen].bounds.size.width)
-#define HQYScreenHeight  ([UIScreen mainScreen].bounds.size.height)
+
 
 @interface HQYReorderingController () <UICollectionViewDelegate,UICollectionViewDataSource>
 

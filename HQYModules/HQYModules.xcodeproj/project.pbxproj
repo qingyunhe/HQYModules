@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		B913CE4A1D66E55A00CEDE0C /* HQYStatusBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = B913CE491D66E55A00CEDE0C /* HQYStatusBarController.m */; };
+		B93117831D8A46EB008BDDD8 /* HQYDownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = B93117801D8A46EB008BDDD8 /* HQYDownMenu.m */; };
+		B93117841D8A46EB008BDDD8 /* HQYDownMenuController.m in Sources */ = {isa = PBXBuildFile; fileRef = B93117821D8A46EB008BDDD8 /* HQYDownMenuController.m */; };
 		B9CA97161D635D1F00FEB07A /* HQYMainCategoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CA97151D635D1F00FEB07A /* HQYMainCategoryController.m */; };
 		B9CA97191D635D3100FEB07A /* HQYSubCategoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CA97181D635D3100FEB07A /* HQYSubCategoryController.m */; };
 		B9CA971C1D635D4900FEB07A /* HYQHealthItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B9CA971B1D635D4900FEB07A /* HYQHealthItem.m */; };
@@ -45,6 +47,11 @@
 /* Begin PBXFileReference section */
 		B913CE481D66E55A00CEDE0C /* HQYStatusBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HQYStatusBarController.h; sourceTree = "<group>"; };
 		B913CE491D66E55A00CEDE0C /* HQYStatusBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HQYStatusBarController.m; sourceTree = "<group>"; };
+		B93117731D8A39E3008BDDD8 /* HQY.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HQY.pch; sourceTree = "<group>"; };
+		B931177F1D8A46EB008BDDD8 /* HQYDownMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HQYDownMenu.h; sourceTree = "<group>"; };
+		B93117801D8A46EB008BDDD8 /* HQYDownMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HQYDownMenu.m; sourceTree = "<group>"; };
+		B93117811D8A46EB008BDDD8 /* HQYDownMenuController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HQYDownMenuController.h; sourceTree = "<group>"; };
+		B93117821D8A46EB008BDDD8 /* HQYDownMenuController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HQYDownMenuController.m; sourceTree = "<group>"; };
 		B9CA97141D635D1F00FEB07A /* HQYMainCategoryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HQYMainCategoryController.h; sourceTree = "<group>"; };
 		B9CA97151D635D1F00FEB07A /* HQYMainCategoryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HQYMainCategoryController.m; sourceTree = "<group>"; };
 		B9CA97171D635D3100FEB07A /* HQYSubCategoryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HQYSubCategoryController.h; sourceTree = "<group>"; };
@@ -111,6 +118,18 @@
 			path = HQYStatusBar;
 			sourceTree = "<group>";
 		};
+		B931177E1D8A46EB008BDDD8 /* HQYDownMenu */ = {
+			isa = PBXGroup;
+			children = (
+				B931177F1D8A46EB008BDDD8 /* HQYDownMenu.h */,
+				B93117801D8A46EB008BDDD8 /* HQYDownMenu.m */,
+				B93117811D8A46EB008BDDD8 /* HQYDownMenuController.h */,
+				B93117821D8A46EB008BDDD8 /* HQYDownMenuController.m */,
+			);
+			name = HQYDownMenu;
+			path = HQYCascadingMenu/HQYDownMenu;
+			sourceTree = "<group>";
+		};
 		B9CA97131D635CFB00FEB07A /* HQYCascadingMenu */ = {
 			isa = PBXGroup;
 			children = (
@@ -164,6 +183,7 @@
 				B9D8BA6F1D61691B003A0CB8 /* HQYCollectionView Reordering */,
 				B9CA97131D635CFB00FEB07A /* HQYCascadingMenu */,
 				B913CE471D66E53500CEDE0C /* HQYStatusBar */,
+				B931177E1D8A46EB008BDDD8 /* HQYDownMenu */,
 				B9D8BA3C1D61686F003A0CB8 /* Supporting Files */,
 			);
 			path = HQYModules;
@@ -176,6 +196,7 @@
 				B9D8BA4A1D61686F003A0CB8 /* LaunchScreen.storyboard */,
 				B9D8BA4D1D61686F003A0CB8 /* Info.plist */,
 				B9D8BA3D1D61686F003A0CB8 /* main.m */,
+				B93117731D8A39E3008BDDD8 /* HQY.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -282,6 +303,7 @@
 		B9D8BA311D61686F003A0CB8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = HQY;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "江城程序猿";
 				TargetAttributes = {
@@ -350,6 +372,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B93117841D8A46EB008BDDD8 /* HQYDownMenuController.m in Sources */,
 				B9CA971C1D635D4900FEB07A /* HYQHealthItem.m in Sources */,
 				B9D8BA761D61695B003A0CB8 /* HQYTableViewController.m in Sources */,
 				B9D8BA791D6169AE003A0CB8 /* HQYReorderingController.m in Sources */,
@@ -357,6 +380,7 @@
 				B9D8BA751D61695B003A0CB8 /* HQYTableViewCell.m in Sources */,
 				B9CA97191D635D3100FEB07A /* HQYSubCategoryController.m in Sources */,
 				B9CA97161D635D1F00FEB07A /* HQYMainCategoryController.m in Sources */,
+				B93117831D8A46EB008BDDD8 /* HQYDownMenu.m in Sources */,
 				B9D8BA411D61686F003A0CB8 /* AppDelegate.m in Sources */,
 				B913CE4A1D66E55A00CEDE0C /* HQYStatusBarController.m in Sources */,
 				B9D8BA3E1D61686F003A0CB8 /* main.m in Sources */,
@@ -493,6 +517,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = HQYModules/HQY.pch;
 				INFOPLIST_FILE = HQYModules/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = www.heqingyun.com.HQYModules;
@@ -504,6 +529,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = HQYModules/HQY.pch;
 				INFOPLIST_FILE = HQYModules/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = www.heqingyun.com.HQYModules;

@@ -11,6 +11,7 @@
 #import "HQYReorderingController.h"
 #import "HQYCascadingMenuController.h"
 #import "HQYStatusBarController.h"
+#import "HQYDownMenuController.h"
 
 @interface HQYTableViewController ()
 
@@ -144,6 +145,15 @@ static NSString * const HQYID = @"cell";
             [self.navigationController pushViewController:statusBarVc animated:YES];
             break;
         }
+        case 3:
+        {
+            HQYDownMenuController *downMenuVc = [[HQYDownMenuController alloc] init];
+            downMenuVc.title = @"自定义下拉菜单";
+            [self.navigationController pushViewController:downMenuVc animated:YES];
+            break;
+        }
+            
+            
         default:
             break;
     }

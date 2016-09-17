@@ -1,0 +1,22 @@
+
+//
+//  HQY.pch
+//  HQYModules
+//
+//  Created by 江城程序猿 on 16/9/15.
+//  Copyright © 2016年 江城程序猿. All rights reserved.
+//
+
+
+#ifdef __OBJC__
+
+// 程序主窗口
+#define HQYKeyWindow [UIApplication sharedApplication].keyWindow
+// 屏幕的bounds
+#define HQYScreenBounds [UIScreen mainScreen].bounds
+
+#define HQYScreenWidth [UIScreen mainScreen].bounds.size.width
+
+#define HQYScreenHeight [UIScreen mainScreen].bounds.size.height
+
+#endif
