@@ -34,7 +34,7 @@
 - (void)setUpDownMenuButton{
 
     UIButton *downMenuButton = [[UIButton alloc] init];
-    [downMenuButton setTitle:@"快点我😄" forState:UIControlStateNormal];
+    [downMenuButton setTitle:@"快点我吧😄" forState:UIControlStateNormal];
     [downMenuButton setFont:[UIFont boldSystemFontOfSize:25]];
     downMenuButton.frame = CGRectMake(50, 50, 150, 30);
     downMenuButton.center = self.view.center;
