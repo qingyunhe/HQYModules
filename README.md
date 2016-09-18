@@ -91,6 +91,13 @@ GitHub：[何青云](https://github.com/qingyunhe) ｜ Blog：[江城程序猿](
  ```
 ### <a id="HQYDownMenu自定义下拉菜单"></a> HQYDownMenu自定义下拉菜单
 ####注意事项:
+1 不能将downMenuView添加到主窗口中
+
+  ```objc
+  [[UIApplication sharedApplication].keyWindow addSubview:downMenuView];
+  ```
+  
+  而应该添加到HQYDownMenu中
 
 
 
