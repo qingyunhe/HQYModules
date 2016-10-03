@@ -67,6 +67,9 @@
         if (button.tag == 4) {
             [button setTitle:@"蜜柚酸奶" forState:UIControlStateNormal];
         }
+        if (button.tag == 5) {
+            [button setTitle:@"动画组" forState:UIControlStateNormal];
+        }
     }
     
     downMenuView.backgroundColor = [UIColor redColor];

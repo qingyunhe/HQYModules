@@ -9,6 +9,8 @@ GitHub：[何青云](https://github.com/qingyunhe) ｜ Blog：[江城程序猿](
 * [级联菜单](#级联菜单)
 * [HQYStatusBar自定义状态栏](#级联菜单)
 * [HQYDownMenu自定义下拉菜单](#下拉菜单)
+* [动画组](#动画组)
+
 
 
   备注:浏览时,gif图偶尔会有非代码原因的卡顿.
@@ -98,7 +100,11 @@ GitHub：[何青云](https://github.com/qingyunhe) ｜ Blog：[江城程序猿](
   ```
   
   而应该添加到HQYDownMenu中
+  
+---    
 
+
+### <a id="动画组"></a> 动画组
 
 
 
