@@ -52,10 +52,10 @@
                   [backView removeFromSuperview];
               }];
         
-        if (button.tag == 0) {
+        if (0 == button.tag ) {
             [button setTitle:@"原味酸奶" forState:UIControlStateNormal];
         }
-        if (button.tag == 1) {
+        if (1 == button.tag) {
             [button setTitle:@"芒果酸奶" forState:UIControlStateNormal];
         }
         if (button.tag == 2) {
@@ -69,6 +69,9 @@
         }
         if (button.tag == 5) {
             [button setTitle:@"动画组" forState:UIControlStateNormal];
+        }
+        if (6 == button.tag) {
+            [button setTitle:@"代码混淆" forState:UIControlStateNormal];
         }
     }
     
