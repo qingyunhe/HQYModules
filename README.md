@@ -10,6 +10,8 @@ GitHub：[何青云](https://github.com/qingyunhe) ｜ Blog：[江城程序猿](
 * [HQYStatusBar自定义状态栏](#级联菜单)
 * [HQYDownMenu自定义下拉菜单](#下拉菜单)
 * [动画组](#动画组)
+* [照片选择器](#照片选择器)
+
 
 
 
@@ -108,6 +110,7 @@ GitHub：[何青云](https://github.com/qingyunhe) ｜ Blog：[江城程序猿](
 ####实现过程:
 
 
+### <a id="照片选择器"></a> 照片选择器
 
 
 ---    
