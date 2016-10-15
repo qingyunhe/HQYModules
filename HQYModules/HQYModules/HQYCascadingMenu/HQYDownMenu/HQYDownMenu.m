@@ -40,7 +40,6 @@
         backView.backgroundColor = [UIColor redColor];
         [view addSubview:backView];
         
-        
         CGFloat ratio = 0.1;
         downMenuView.transform = CGAffineTransformMakeTranslation(0, - (ratio * downMenuView.frame.size.height));
         [UIView animateWithDuration:0.5 delay:0 usingSpringWithDamping:0.8

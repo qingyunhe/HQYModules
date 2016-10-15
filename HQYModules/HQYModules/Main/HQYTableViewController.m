@@ -28,11 +28,11 @@ static NSString * const HQYID = @"cell";
     self.tableView.rowHeight = 66;
     
     // 设置背景视图
-    [self backgroundView];
+    [self setUpBackgroundView];
 }
 
-#pragma - mark 设置背景视图
-- (void)backgroundView{
+#pragma - mark 添加背景视图
+- (void)setUpBackgroundView{
 
     UIImageView *imageView = [[UIImageView alloc] init];
     imageView.image = [UIImage imageNamed:@"bg"];
@@ -81,7 +81,7 @@ static NSString * const HQYID = @"cell";
         }
         case 4:
         {
-            text = @"待续 😄😄😄😄😄😄";
+            text = @"照片选择器";
             break;
         }
         case 5:
